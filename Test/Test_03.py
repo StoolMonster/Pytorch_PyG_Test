@@ -27,3 +27,5 @@ train_dataset = dataset[:540]
 
 test_dataset = dataset[540:]
 # >>> ENZYMES(60)
+
+# 如果不确定数据集在划分前是否洗过牌。

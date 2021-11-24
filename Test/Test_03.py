@@ -29,3 +29,11 @@ test_dataset = dataset[540:]
 # >>> ENZYMES(60)
 
 # 如果不确定数据集在划分前是否洗过牌。
+
+dataset = dataset.shuffle()
+# >>> ENZYMES(600)
+
+# 以下两行命令也算是洗牌
+perm = torch.randperm(len(dataset))
+dataset = dataset[perm]
+# >> ENZYMES(600)
